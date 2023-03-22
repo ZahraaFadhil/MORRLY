@@ -1,0 +1,138 @@
+*{
+   margin: 0;
+   padding: 0;
+    font-family: sans-serif;  
+}
+body{
+    background: url(3.jpg) no-repeat;
+    background-size:fixed;
+}
+nav{
+    flex: 1;
+    text-align: left;
+    display: inline-block;
+    color: #e0e8ea;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #c7bda7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #c7bda7;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #0b171b ;
+    font-family: sans-serif;
+    font: weight 400px; 
+}
+/*لون ثاني للقائمه */
+nav ul li button:hover
+{
+  
+    color:  #1c8ad9; 
+    font-weight: 200;
+}
+nav ul li a:hover
+{
+    color:   #fdfdfd;
+font-weight: 200;
+}
+
+h1{
+    text-align: center;
+    margin: 50px auto 120px !important;
+    color: #ffffff;
+    font-family:sans-serif;
+    
+}
+/*شعار الخدمات*/
+.main {
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+.service {
+background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    width: 400px;
+    higth:200px;
+}
+/*خلفيه شعار الخدمات*/
+.service-logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #ffffff;
+    border: 18px solid #E8E1D3;
+}
+/*حجم شعار الخدمات*/
+.service-logo img{
+    width: 60px;
+    margin-top: 20px;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh; /* البعد من الاعلى */
+  }
+  
+  .col-md1{
+    width: 400px; /* example width */
+    height: 100px; /* example height */
+    margin: 0px 8px; /* Add some margins between the boxes*/
+  }
+  .sub_content {
+    position: relative; /* position relative for the sub_menu */
+  }
+  
+  .sub_drop {
+    background-color: #1c8ad9; /* button background color */
+    color: white; /* button text color */
+    padding: 16px; /* button size */
+    font-size: 16px; /* button text size */
+    border: none;
+    border-radius:10px ; /* remove button border */
+
+  }
+  
+  .sub_menu {
+    display: none; /* hide menu by default */
+   /* position: absolute; /* position absolute for the menu */
+    background-color: #fdfdfd; /* menu background color */
+    min-width: 200px; /* menu width */
+   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* menu shadow */
+   border: none;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+  }
+  
+  /* Show the menu when the button is clicked */
+  .sub_content:hover .sub_menu {
+    display:block;
+    width: 110px;
+    height: 110px;
+    font-size: 25px;
+    
+  }  
