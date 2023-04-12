@@ -51,19 +51,20 @@ nav ul li a:hover{
 font-weight: 200;
 }
 
-/*.sign-in-form{
-width: 400px;
+.sign-in-form{
+width: 500px;
 box-shadow: 0 0 3px 0 rgba (0,0,0,0.3);
 background: #FFFDF8;
 padding: 20px;
 border-radius: 20px;
 margin: 8% auto 0;
 box-shadow: 0 01px 1px rgb(0, 0, 0);
-}*/
+}
 
 
 .sign-in-form h1{
-    padding: 50px;
+    /*البعد عن  sin up*/
+    padding: 30px;
 text-align: center;
     color:#000000 ;
     margin: bottom 20px; 
@@ -78,7 +79,7 @@ text-align: center;
     width: 80%;
     border: 1px solid #999 ;
     outline: none;
-    margin-left: 100px;
+    margin-left: 40px;
     
 
 }
@@ -100,7 +101,7 @@ input{
 .sign-in-btn{
     background-color: #1c8ad9;
     width: 50%;
-    margin-left: 350px;
+    margin-left: 130px;
 }
 /*نوع الخط*/
 h1{
