@@ -87,7 +87,18 @@ input{
     border: none;
     outline: none;
     cursor: pointer;
+/* show*/
+border: 1px solid #13544e;
+border-radius: 5px;
+margin-bottom: 15px;
 }
+.show input:hover{
+
+    border: 2px solid #13544e;
+    box-shadow: 1px 1px 7px black;
+    transition: 0.3s;
+}
+
 .helpp{
     margin-left: 675px;}
 .provider-btn{
@@ -121,3 +132,15 @@ h1{
 }
 
 
+.checkbox{
+
+    display:inline-flex;
+    align-items: left;
+    
+    }
+input[type="checkbox"]{
+    
+    height: 16px;
+    width: 15px;
+    }
+    

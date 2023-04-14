@@ -94,9 +94,20 @@ input{
     border: none;
     outline: none;
     cursor: pointer;
-    
-}
 
+  /* show*/
+    border: 1px solid #13544e;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    }
+    .show input:hover{
+    
+        border: 2px solid #13544e;
+        box-shadow: 1px 1px 7px black;
+        transition: 0.3s;
+    }
+
+    
     /*submit*/
 .sign-in-btn{
     background-color: #1c8ad9;
@@ -109,4 +120,9 @@ h1{
 }
 .checkbox{
     margin-left: 500px;
+}
+/*.show{
+        border: 2px solid #13544e;
+        box-shadow: 1px 1px 7px black;
+        transition: 0.3s;
 }
