@@ -53,51 +53,75 @@ nav ul li a:hover
     color:   #fdfdfd;
 font-weight: 200;
 }
-.sign-up-form{
-    width: 400px;
-    box-shadow: 0 0 3px 0 rgba (0,0,0,0.3);
-background: #FFFDF8;
-padding: 20px;
-border-radius: 20px;
-margin: 8% auto 0;
-text-align: center;
-box-shadow: 0 01px 1px rgb(0, 0, 0);
+/***********************************************************/
+.sign-up-form
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 95vw;
+	margin: 2% auto 0;;
+	color:#000000 ;
+	border-radius: 20px;
+	
 }
 .sign-up-form h1{
     color:#000000 ;
     margin: bottom 30px; ;
 }
-.input-box{
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px 0;
-    width: 80%;
-    border: 1px solid #999 ;
-    outline: none;
-}
+
 input{
     color: rgb(17, 8, 8);
     width: 100%;
     padding: 10px;
     border-radius: 20px;
     font-size: 15px;
-    margin: 10px 0;
+    margin: 1px 0;
     border: none;
     outline: none;
     cursor: pointer;
+	
 }
-.helpp{
-    margin-left: 675px;}
-.sign-up-btn{
-    background-color: #1c8ad9;
+.input-box{
+    border-radius: 500px;
+    padding: 10px;
+    margin: 1px 0;
+    width: 100%;
+    border: 1px solid #999 ;
+    outline: none;
+	
 }
-.tweetir-btn{
-    background-color: #21afde;
+
+.tweetir-btn
+{
+	text-indent: 0px;
+	height: 40px;
+	width: 300px;
+	margin-top: 10px;
+	background-color: #1c8ad9;
+	transition: "2s";
+	border: none;
+	color: white;
+	font-weight: bolder;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+	outline: none;
+
 }
-a{
-    text-decoration: none;
+.tweetir-btn:hover
+{
+	color: #5a5449;
+	cursor: pointer;
 }
+
+.foot
+{
+	color: #5a5449;
+	font-weight: lighter;
+	margin-top: 40px;
+}
+/*************************/
 hr{
+	
     margin-top:20px;
     width: 80px ;
 }
@@ -108,14 +132,68 @@ margin: -19px auto 10px;
     
 }
 
-h3{
-    font-family: sans-serif;
-    color: hsl(205, 77%, 48%);
-    text-align: right;
-}
-
-h1{
+.h1{
     font-family: sans-serif;
 }
+.checkbox{
 
+    display:inline-flex;
+    align-items: left;
+    
+    }
+input[type="checkbox"]{
+    
+    height: 16px;
+    width: 15px;
+    }
+	.helpp{
+		margin-left: 675px;
+	}
+	/**************************************************************************************************/
+	
+.monkeylogin
+{   width: 400px;
+	align-items: center;
+	border-radius: 400px;	
+	box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+    padding: 20px;
+    outline: none;
+	background-color: #FFFDF8;
+}
+.animcon
+{
+	background-color: white;
 
+	overflow: hidden;
+	/*overflow hidden because to keep the hand image hidden below*/
+	margin-top:20px;
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+	/*monkey*/
+	background-image:url(https://raw.githubusercontent.com/naaficodes/Monkey-Login/master/images/monkey.gif);
+	background-size: 90% 85%;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+
+	/*flex center to keep the hand image in the center*/
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.animcon img
+{
+	margin-top:110%;
+	height: 170px;
+	width: 170px;
+	transition: 1s;
+}
+
+.formcon
+{
+	margin-top: 38px;
+}
