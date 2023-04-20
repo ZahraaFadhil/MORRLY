@@ -58,12 +58,12 @@ font-weight: 200;
 .provider{
     width: 400px;
     box-shadow: 0 0 3px 0 rgba (0,0,0,0.3);
-background: #FFFDF8;
-padding: 90px;
-border-radius: 10px;
-margin: 8% auto 0;
-text-align: center;
-box-shadow: 0 1px px rgb(0, 0, 0);
+    background: #FFFDF8;
+    padding: 90px;
+    border-radius: 10px;
+    margin: 8% auto 0;
+    text-align: center;
+    box-shadow: 0 1px px rgb(0, 0, 0);
 }
 .provider h1{
     color:#000000 ;
