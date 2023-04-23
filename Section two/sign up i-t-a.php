@@ -13,7 +13,8 @@ if (!$conn) {
 }
 
 // Prepare and bind the SQL statement
-$stmt = $conn->prepare("INSERT INTO asign_up (Firstname, Lastname, Email, YPassword, CPassword, Phnamber) VALUES (?, ?, ?, ?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO asign_up (Firstname, Lastname, Email, YPassword, CPassword, Phnamber) 
+                                      VALUES (?, ?, ?, ?, ?, ?)");
 $stmt->bind_param("sssssi", $firstname, $lastname, $email, $ypassword, $cpassword, $phonenumber);
 
 // Set the parameters and execute the statement
