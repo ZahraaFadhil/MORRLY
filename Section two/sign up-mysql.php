@@ -48,6 +48,7 @@ $stmt->execute();
  
 $stmt2 = $conn2->prepare("INSERT INTO morrly.asign_up (Firstname, Lastname, Email, YPassword, CPassword, Phnamber) 
 VALUES (?, ?, ?, ?, ?, ?)");
+
 $stmt2->bind_param("sssssi", $firstname, $lastname, $email, $ypassword, $cpassword, $phonenumber);
 
 $stmt2->execute();
