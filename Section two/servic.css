@@ -77,7 +77,7 @@ section {
   width: 100%;
   height: 100%;
   padding: 2em 1.5em;
-  background: linear-gradient(#ffffff 50%, #527e65 50%);
+  background: linear-gradient(#ffffff 50%, #689dc4 50%);
   background-size: 100% 200%;
   background-position: 0 2.5%;
   border-radius: 5px;
@@ -99,7 +99,7 @@ p {
 }
 .icon-wrapper {
   
-  background-color: #527e65;
+  background-color: #1c8ad9;
   position: relative;
   margin: auto;
   font-size: 30px;
@@ -116,7 +116,7 @@ p {
 }
 .card:hover .icon-wrapper {
   background-color: #ffffff;
-  color: #527e65;
+  color: #1c8ad9;
 }
 .card:hover h3 {
   color: #ffffff;
@@ -127,6 +127,7 @@ p {
 @media screen and (min-width: 768px) {
   section {
     padding: 0 2em;
+
   }
   .column {
     flex: 0 50%;
@@ -143,21 +144,3 @@ p {
   }
 }
 
-.service-logo{
-  background-color: #7e5952;
-  position: relative;
-  margin: auto;
-  font-size: 30px;
-  height: 2.5em;
-  width: 2.5em;
-  color: #ffffff;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  transition: 0.5s;
-}
-/*حجم شعار الخدمات*/
-.service-logo img{
-  width: 60px;
-  margin-top: 20px;
-}

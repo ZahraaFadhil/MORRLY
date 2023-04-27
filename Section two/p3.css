@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
   }
   
   nav {
@@ -72,6 +71,7 @@ nav ul li button:hover
     color: #ffffff;
     border: 2px solid #e0e8ea;
     padding: 14px;
+
 
 /*box shapp*/
     border-radius: 1000px;
