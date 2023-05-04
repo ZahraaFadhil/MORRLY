@@ -13,9 +13,9 @@ if (!$conn) {
 }
 
 // Prepare and bind the SQL statement
-$stmt = $conn->prepare("INSERT INTO asign_up (Firstname, Lastname, Email, YPassword, CPassword, Phnamber) 
+$stmt=$conn->prepare("INSERT INTO asign_up (Firstname, Lastname, Email, YPassword, CPassword, Phnamber) 
                                       VALUES (?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("sssssi", $firstname, $lastname, $email, $ypassword, $cpassword, $phonenumber);
+$stmt->bind_param("sssssi", $firstname, $lastname, $email, $ypassword, $cpassword, $Phnumber);
 
 // Set the parameters and execute the statement
 $firstname = $_POST["firstname"];
@@ -23,7 +23,7 @@ $lastname = $_POST["lastname"];
 $email = $_POST["email"];
 $ypassword = $_POST["ypassword"];
 $cpassword = $_POST["cpassword"];
-$phonenumber = $_POST["phonenumber"];
+$Phnumber = $_POST["Phnumber"];
 
 if ($stmt->execute()) {
   echo "Record inserted successfully!";

@@ -11,5 +11,5 @@ function closeye()
 function openeye()
 {
 	y.style.backgroundImage="url(https://raw.githubusercontent.com/naaficodes/Monkey-Login/master/images/monkey.gif)";
-	x.style.marginTop="110%";
+	x.style.marginTop="0%";
 }

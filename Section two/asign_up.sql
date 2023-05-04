@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 23, 2023 at 09:03 PM
+-- Generation Time: May 04, 2023 at 11:48 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -34,7 +34,7 @@ CREATE TABLE `asign_up` (
   `Email` varchar(50) DEFAULT NULL,
   `YPassword` varchar(50) NOT NULL,
   `CPassword` varchar(50) NOT NULL,
-  `Phnamber` int(100) NOT NULL
+  `Phnamber` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -42,10 +42,9 @@ CREATE TABLE `asign_up` (
 --
 
 INSERT INTO `asign_up` (`Id`, `Firstname`, `Lastname`, `Email`, `YPassword`, `CPassword`, `Phnamber`) VALUES
-(1, 'zahrara', 'fadhil', 'zahraa@gmail.com', '1234', '1234', 2147483647),
-(2, 'zahrara', '22', 'zf@gmail.com', '1234', '123', 788985544),
-(3, 'zahrara', 'fadhil', 'zahraafadhil@gmail.com', '9865', '9865', 789456123),
-(4, 'za21', 'fa', 'bvodls@gmail.com', '987654321', '987654321', 789456123);
+(1, 'zahrara', 'fadhil', 'zahraadfdg@gmail.com', 'ZAZA654', 'ZAZA654', '96480952003'),
+(3, 'zahrara654', 'fadhil654', 'root@gmail.com', '123987', '123987', '7894555222'),
+(6, 'ZahraraFadhil', 'Hussein', 'Zahraa_Fadhil$%@gmail.com', 'zxcv12345', 'zxcv12345', '7894563210');
 
 --
 -- Indexes for dumped tables
@@ -65,7 +64,7 @@ ALTER TABLE `asign_up`
 -- AUTO_INCREMENT for table `asign_up`
 --
 ALTER TABLE `asign_up`
-  MODIFY `Id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

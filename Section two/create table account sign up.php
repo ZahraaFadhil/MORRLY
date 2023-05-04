@@ -7,7 +7,7 @@ $dbname = "morrly";
 $conn = mysqli_connect($servername, $username,$password, $dbname);
 
 $sql = "CREATE TABLE Sign_up (
-Id         INT(100)  AUTO_INCREMENT PRIMARY,
+Id         INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 Firstname  VARCHAR(50) NOT NULL,
 Lastname   VARCHAR(50) NOT NULL,
 Email      VARCHAR(50),
