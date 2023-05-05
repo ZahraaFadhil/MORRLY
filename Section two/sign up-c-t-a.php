@@ -19,8 +19,8 @@ Firstname  VARCHAR(50) NOT NULL,
 Lastname   VARCHAR(50) NOT NULL,
 Email      VARCHAR(50),
 YPassword  VARCHAR(50) NOT NULL,
-CPassword  VARCHAR(50)  NOT NULL,
-Phnamber   VARCHAR(50)   NOT NULL )";
+CPassword  VARCHAR(50) NOT NULL,
+Phnamber   BIGINT(50) NOT NULL )";
 
 if (mysqli_query($conn, $sql)) {
   echo "Table created successfully!";

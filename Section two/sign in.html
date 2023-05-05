@@ -29,16 +29,19 @@
         <img src="">
         <h2 >Create a new account</h2><BR><br>
         <div class="show">
-            <form action="sign up i-t-a.php" method="post">
+            <form action="./php/sign up i-t-a.php" method="post">
                 
            
                 <input type="text"     id="firstname"   name="firstname"   class="input-box"placeholder="First Name"       required><br>
                 <input type="text"     id="lastname"    name="lastname"    class="input-box"placeholder="Last Name"        required><br>
                 <input type="email"    id="email"       name="email"       class="input-box" placeholder="Email"           required><br>
-                <input type="password" id="ypassword"   name="ypassword"   class="input-box"placeholder="Your password"    required><br>
-                <input type="password" id="cpassword"   name="cpassword"   class="input-box"placeholder="Confirm password" required><br>
+                
+                <input type="password" id="password"   name="ypassword"   class="input-box"placeholder="Password"    required><br>
+                <input type="password" id="cnfrm-password"   name="cpassword"   class="input-box"placeholder="Confirm password" required ><br>
+                <p id="message"></p>
+                
                 <input type="tel"      id="Phnumber"    name="Phnumber"    class="input-box"placeholder="Phone number"     required><br>
-                <input type="submit"   value="Sign up" class="sign-in-btn">
+                <input type="submit"   value="Sign up" class="sign-in-btn"onclick="checkPassword()">
               
 
                 <!----
@@ -46,7 +49,9 @@
                 <div class="checkbox">
                 <input type="checkbox">I agree to the terms of Servic</div> </p>-->
 
-   </form>  </div>
-     </div>
+   </form>
+   <script src="./Javascript/password.js"></script>
+</div> </div>
 
     </body>
+    </html>
