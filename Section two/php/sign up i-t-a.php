@@ -15,14 +15,14 @@ if (!$conn) {
 // Prepare and bind the SQL statement
 $stmt=$conn->prepare("INSERT INTO asign_up (Firstname, Lastname, Email, YPassword, CPassword, Phnamber) 
                                       VALUES (?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("sssssi", $firstname, $lastname, $email, $ypassword, $cpassword, $Phnumber);
+$stmt->bind_param("sssssi", $Firstname, $Lastname, $Email, $YPassword, $CPassword, $Phnumber);
 
 // Set the parameters and execute the statement
-$firstname = $_POST["firstname"];
-$lastname = $_POST["lastname"];
-$email = $_POST["email"];
-$ypassword = $_POST["ypassword"];
-$cpassword = $_POST["cpassword"];
+$Firstname = $_POST["Firstname"];
+$Lastname = $_POST["Lastname"];
+$Email = $_POST["Email"];
+$YPassword = $_POST["YPassword"];
+$CPassword = $_POST["CPassword"];
 $Phnumber = $_POST["Phnumber"];
 
 if ($stmt->execute()) {

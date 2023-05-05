@@ -9,6 +9,18 @@ $result = mysqli_query($conn, $sql);
 if(mysqli_num_rows($result) > 0) {
     // Output table header
     echo "<table border='1'>";
+    echo"  <br>";     echo"  <br>";
+    echo "<form method='post' action='update.php'>";
+        echo " <label for='id'>ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>";
+        echo " <input type='text' name='id' id='id'>";
+        echo "  <br>";
+        echo "  <label for='new_email'>New email:&nbsp;&nbsp;</label>";
+        echo "  <input type='text' name='new_email' id='new_email'>";
+        echo "  <br>";
+        echo " <input type='submit' value='Update email'>";
+        echo "  <br>"; echo "  <br>";
+        echo " </form>";
+
     echo "<tr>
     <th>ID</th>
     <th>First Name</th>
@@ -17,7 +29,7 @@ if(mysqli_num_rows($result) > 0) {
     <th>YPassword</th>
     <th>CPassword</th>
     <th>Phone Number</th>
-    <th>Update</th>
+
      <th>Delete</th>
     </tr>";
     
@@ -33,16 +45,9 @@ if(mysqli_num_rows($result) > 0) {
         echo "<td>".$row['Phnamber']."</td>";
         echo "<td>";
 
-        echo "<form method='post' action=''>";
-        echo "<input type='hidden' name='id' value='".$row['Id']."'>";
-        echo "<input type='text' name='new_email' placeholder='New email'>";
-        echo "<input type='submit' name='update' value='Update'>";
-        echo "</form>";
-      
-        
-        echo"<td>";
         echo "<a href='delete.php?id=".$row['Id']."'>Delete</a>";
         echo"</td>";
+        
         echo "</tr>";
     }
     
